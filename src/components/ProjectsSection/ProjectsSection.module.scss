@@ -1,0 +1,23 @@
+.projects {
+    padding: 9rem 2rem;
+  
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+  
+    .project-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+  
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+    }
+  }
+  

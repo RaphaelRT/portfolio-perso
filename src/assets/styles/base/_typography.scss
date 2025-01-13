@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../../fonts/Helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../../fonts/helvetica-light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Redaction 35';
+    src: url('../../fonts/Redaction_35-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Redaction 35';
+    src: url('../../fonts/Redaction_35-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Redaction 20';
+    src: url('../../fonts/Redaction_20-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Redaction 50';
+    src: url('../../fonts/Redaction_50-Regular.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/* Global Typography */
+body {
+    font-family: 'Helvetica', sans-serif;
+    color: $text-light; /* Ou une variable SCSS compilée */
+}

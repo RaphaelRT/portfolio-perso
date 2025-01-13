@@ -1,0 +1,12 @@
+body {
+    background-color: $background-dark;
+    padding: $page-padding;
+    @media (max-width: 640px) {
+        padding: $page-padding-responsive;
+    }
+    b {
+        font-family: $font-family-secondary;
+        color: $text-bold;
+        font-style: italic;
+    }
+}

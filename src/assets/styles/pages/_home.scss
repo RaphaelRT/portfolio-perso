@@ -1,0 +1,51 @@
+h2 {
+    font-size: $font-size-h2;
+    margin-bottom: 4rem;
+    display: inline-block;
+    width: 100%;
+    @media (max-width: 640px) {
+        margin-bottom: 2.5rem;
+        margin-top: 0.5rem;
+    }
+}
+.homeContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100vh - 15rem);
+    
+    &_col1, &_col2 {
+        width: 50%;
+    }
+    &_col1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &_smallDescription {
+            font-size: $font-size-current;
+            font-weight: lighter;
+            font-family: $font-family-primary;
+            margin-bottom: 2.5rem;
+            b {
+                font-size: $font-size-italic;
+            }
+        }
+    }
+    &_col2 {
+        overflow-y: scroll;
+    }
+    @media (max-width: 640px) {
+        flex-direction: column;
+        &_col1, &_col2 {
+            width: 100%;
+        }
+        &_col1 {
+            height: 70vh;
+        }
+        &_col2 {
+            margin-top: 2.5rem;
+            overflow-y: inherit;
+        }
+    }
+
+}
