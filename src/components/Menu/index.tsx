@@ -1,16 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 
 interface MenuProps {
   currentSection: string | null;
 }
 
 const Menu: React.FC<MenuProps> = ({ currentSection }) => {
-  const menuItems = [
-    { id: 'about', label: '[ à propos ]' },
-    { id: 'experiences', label: '[ expériences ]' },
-    { id: 'education', label: '[ formation ]' },
-    // { id: 'projects', label: '[ projets ]' },
-  ];
+  const menuItems = useMemo(
+    () => [
+      { id: 'about', label: '[ à propos ]' },
+      { id: 'experiences', label: '[ expériences ]' },
+      { id: 'education', label: '[ formation ]' },
+      // { id: 'projects', label: '[ projets ]' },
+    ],
+    []
+  );
 
   const [activeHash, setActiveHash] = useState<string>(
     window.location.hash || `#${menuItems[0].id}`
