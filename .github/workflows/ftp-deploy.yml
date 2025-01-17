@@ -3,45 +3,43 @@ name: Deploy to SFTP
 on:
   push:
     branches:
-      - '**' # Trigger on push for all branches
+      - '**' # Déclenchement sur push pour toutes les branches
 
 jobs:
   sftp-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository
+      # Vérifier le dépôt
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      # Install dependencies and build the project
+      # Installer les dépendances et construire le projet
       - name: Install Dependencies and Build
         run: |
           npm install
           npm run build
 
-      # Deploy to Staging SFTP
+      # Déployer sur le SFTP de staging
       - name: Deploy to Staging SFTP
         if: github.ref != 'refs/heads/main'
-        uses: appleboy/ftp-action@v0.6.0
+        uses: Dylan700/sftp-upload-action@v1.2.3
         with:
-          host: ${{ secrets.SFTP_SERVER }}
+          server: ${{ secrets.SFTP_SERVER }}
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
           port: 22
-          protocol: sftp
-          local-dir: build/
-          remote-dir: /www/staging/
+          uploads: |
+            ./build/ => /www/staging/
 
-      # Deploy to Production SFTP
+      # Déployer sur le SFTP de production
       - name: Deploy to Production SFTP
         if: github.ref == 'refs/heads/main'
-        uses: appleboy/ftp-action@v0.6.0
+        uses: Dylan700/sftp-upload-action@v1.2.3
         with:
-          host: ${{ secrets.SFTP_SERVER }}
+          server: ${{ secrets.SFTP_SERVER }}
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
           port: 22
-          protocol: sftp
-          local-dir: build/
-          remote-dir: /www/
+          uploads: |
+            ./build/ => /www/
