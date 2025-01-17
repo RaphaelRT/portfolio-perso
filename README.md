@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Raphaël Robert Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my professional portfolio! This project showcases my skills and experiences as a Full Stack Developer, Data Engineer, and DevOps specialist. If you're looking to collaborate or hire a versatile developer with a passion for technology, you've come to the right place.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [About Me](#about-me)
+- [Contact Information](#contact-information)
+- [Skills](#skills)
+- [How to Use This Portfolio](#how-to-use-this-portfolio)
+- [Get in Touch](#get-in-touch)
 
-### `npm start`
+## About Me
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I am a Full Stack Developer with extensive experience in:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Web Development**: React, Node.js, Django, and more.
+- **Data Engineering**: Designing ETL pipelines, managing large-scale databases.
+- **DevOps**: CI/CD pipelines, Docker, Kubernetes, cloud infrastructure.
+- **AI and Machine Learning**: TensorFlow, Computer Vision, NLP, and data pipelines.
 
-### `npm test`
+Over the years, I've worked on projects that improved scalability, enhanced user experiences, and optimized technical processes. I'm currently open to exciting opportunities to bring my expertise to new challenges.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contact Information
 
-### `npm run build`
+If you're interested in working with me or learning more about my experience, feel free to reach out:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Email**: [raphaelrobert.pro@gmail.com](mailto:raphaelrobert.pro@gmail.com)
+- **Portfolio**: [www.raphaelrbr.com](https://www.raphaelrbr.com)
+- **GitHub**: [RaphaelRT](https://github.com/RaphaelRT)
+- **LinkedIn**: [Raphaël Robert](https://www.linkedin.com/in/raphael-robert)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Skills
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Here are some of the key areas I excel in:
 
-### `npm run eject`
+- **Programming Languages**: JavaScript, Python, SQL, Java.
+- **Frameworks and Libraries**: React, React Native, Django, Node.js.
+- **Data Tools**: Pandas, Geopandas, Spark, Hadoop.
+- **DevOps Tools**: Docker, Kubernetes, CI/CD pipelines.
+- **Cloud Platforms**: AWS, Google Cloud Platform (GCP).
+- **Machine Learning**: TensorFlow, Scikit-learn, YOLACT.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How to Use This Portfolio
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This portfolio provides an overview of my professional journey, including:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Details about my past projects.
+- Highlights of my technical skills and expertise.
+- Links to my GitHub and LinkedIn for deeper insights into my work.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Explore the various sections to learn more about my background and achievements.
 
-## Learn More
+## Get in Touch
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I am actively looking for new opportunities where I can contribute my skills and grow as a professional. Whether you're hiring for a Full Stack Developer, Data Engineer, or DevOps role, I would be thrilled to discuss how I can add value to your team.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feel free to contact me through the methods listed above, or visit my portfolio for more details about my work.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Thank you for your time and interest in my portfolio. I look forward to connecting with you!
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
