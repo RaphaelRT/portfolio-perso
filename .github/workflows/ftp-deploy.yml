@@ -30,7 +30,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 22
           uploads: |
-            ./build/ => ./www/staging/
+            ./build/ => ./staging/
 
       # Déployer sur le SFTP de production
       - name: Deploy to Production SFTP
@@ -42,4 +42,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 22
           uploads: |
-            ./build/ => ./www/
+            ./build/ => ./
