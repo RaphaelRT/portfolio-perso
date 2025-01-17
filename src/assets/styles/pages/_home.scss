@@ -16,6 +16,7 @@ h2 {
     
     &_col1, &_col2 {
         width: 50%;
+        scroll-behavior: smooth;
     }
     &_col1 {
         display: flex;

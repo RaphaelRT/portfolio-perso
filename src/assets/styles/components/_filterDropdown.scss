@@ -6,17 +6,88 @@
     width: 100%;
     border-radius: 0.2rem;
     margin-bottom: 1rem;
-    background-color: $clickable-color;
-    padding: 0.9rem 1.3rem;
     &_header {
         display: flex;
+        align-items: center;
+        border: 2px solid $clickable-color;
+        border-radius: 0.2rem;
+        max-width: 100%;
+
+        &.isOpen {
+          border-bottom-left-radius: 0; // Supprime le border-radius en bas à gauche
+          border-bottom-right-radius: 0; // Supprime le border-radius en bas à droite si nécessaire
+        }
         &_label {
             color: $background-dark;
             font-family: $font-family-primary;
         }
         svg {
             max-width: 0.65rem;
-            padding: 0 0.8rem 0 0.8rem;
+        }
+        &_activeFilters {
+            max-width: 20rem;
+            overflow: scroll;
+            background-color: $background-dark;
+            height: 100%;
+            padding: 0.30rem 0.9rem;
+            border-radius: 0.2rem;
+            display: flex;
+            flex-direction: row;
+            &_badge {
+                padding: 0.3rem;
+                background-color: $background-light;
+                margin-right: 0.5rem;
+                width: max-content;
+                display: flex;
+                flex-direction: row;
+                border-radius: 0.2rem;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                white-space: nowrap;
+                svg {
+                    width: 3rem;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+        &_btn {
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 0.65rem 0.65rem;
+            cursor: pointer;
+            justify-content: space-between;
+            background-color: $clickable-color;
+            width: 7.6rem;
+        }
+        
+    }
+    &_dropdownList {
+        background-color: $text-light;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 10;
+        border: 3px solid $clickable-color;
+        max-height: 15rem;
+        overflow-y: scroll;
+        box-sizing: border-box;
+        &_dropdownItem {
+            color: $background-dark;
+            padding: 0.4rem;
+            margin: 0.3rem;
+            cursor: pointer;
+            border: solid 1px $clickable-color;
+            border-radius: 0.2rem;
+            &:hover{
+                background-color: $clickable-color;
+                color: $text-light;
+            }
+            &_selected {
+                background-color: $clickable-color;
+                color: $text-light;
+            }
         }
     }
     

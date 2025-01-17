@@ -5,7 +5,7 @@ const Menu: React.FC = () => {
     { id: 'about', label: '[ à propos ]' },
     { id: 'experiences', label: '[ expériences ]' },
     { id: 'education', label: '[ formation ]' },
-    { id: 'projects', label: '[ projets ]' },
+    //{ id: 'projects', label: '[ projets ]' },
   ];
 
   const [activeHash, setActiveHash] = useState<string>(

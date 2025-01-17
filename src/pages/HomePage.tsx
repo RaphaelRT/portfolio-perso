@@ -3,7 +3,8 @@ import Header from '../components/Header';
 import Menu from '../components/Menu';
 import Contact from '../components/Contact/Contact';
 import AboutSection from '../components/AboutSection/AboutSection';
-import ExperiencesSection from '../components/ExperiencesSection/ExperiencesSection';
+import ExperiencesSection from '../components/ExperiencesSection';
+import FormationSection from '../components/FormationSection';
 
 const HomePage: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage: React.FC = () => {
         <div className='homeContainer_col2'>
           <AboutSection />
           <ExperiencesSection />
+          <FormationSection />
         </div>
       </div>
     </div>
