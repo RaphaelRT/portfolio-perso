@@ -1,4 +1,4 @@
-name: Deploy to FTP
+name: Deploy to SFTP
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - '**' # Trigger on push for all branches
 
 jobs:
-  ftp-deploy:
+  sftp-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,24 +20,28 @@ jobs:
           npm install
           npm run build
 
-      # Deploy to Staging FTP
-      - name: Deploy to Staging FTP
+      # Deploy to Staging SFTP
+      - name: Deploy to Staging SFTP
         if: github.ref != 'refs/heads/main'
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        uses: appleboy/ftp-action@v0.6.0
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          host: ${{ secrets.SFTP_SERVER }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          port: 22
+          protocol: sftp
           local-dir: build/
-          server-dir: /www/staging/
+          remote-dir: /www/staging/
 
-      # Deploy to Production FTP
-      - name: Deploy to Production FTP
+      # Deploy to Production SFTP
+      - name: Deploy to Production SFTP
         if: github.ref == 'refs/heads/main'
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        uses: appleboy/ftp-action@v0.6.0
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          host: ${{ secrets.SFTP_SERVER }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          port: 22
+          protocol: sftp
           local-dir: build/
-          server-dir: /www/
+          remote-dir: /www/
