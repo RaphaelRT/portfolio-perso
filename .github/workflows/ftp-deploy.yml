@@ -25,21 +25,21 @@ jobs:
         if: github.ref != 'refs/heads/main'
         uses: Dylan700/sftp-upload-action@v1.2.3
         with:
-          server: ${{ secrets.SFTP_SERVER }}
-          username: ${{ secrets.SFTP_USERNAME }}
-          password: ${{ secrets.SFTP_PASSWORD }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           port: 22
           uploads: |
-            ./build/ => /www/staging/
+            ./build/ => ./www/staging/
 
       # Déployer sur le SFTP de production
       - name: Deploy to Production SFTP
         if: github.ref == 'refs/heads/main'
         uses: Dylan700/sftp-upload-action@v1.2.3
         with:
-          server: ${{ secrets.SFTP_SERVER }}
-          username: ${{ secrets.SFTP_USERNAME }}
-          password: ${{ secrets.SFTP_PASSWORD }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           port: 22
           uploads: |
-            ./build/ => /www/
+            ./build/ => ./www/
