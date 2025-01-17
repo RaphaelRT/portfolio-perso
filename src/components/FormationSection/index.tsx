@@ -1,7 +1,6 @@
-import React, { useState, forwardRef } from 'react';
-import FilterDropdown from '../FilterDropdown';
+import React, { forwardRef } from 'react';
 import Anchor from '../Anchor/Anchor';
-import { formation, Formation } from "./formation";
+import { formation } from "./formation";
 
 const FormationSection = forwardRef<HTMLDivElement>((_, ref) => {
  
@@ -13,7 +12,7 @@ const FormationSection = forwardRef<HTMLDivElement>((_, ref) => {
         {formation.map((education, id) => {
           return (
             <div key={id} className='formationSection_card'>
-              <a href={education.link} target='_blank' className='formationSection_card_infos hoverable'>
+              <a href={education.link} target='_blank' rel="noreferrer" className='formationSection_card_infos hoverable'>
                 <h3>{education.diploma}</h3>
                 <span>{education.school}, {education.place}</span>
               </a>

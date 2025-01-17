@@ -1,7 +1,7 @@
 import React, { useState, forwardRef } from 'react';
 import FilterDropdown from '../FilterDropdown';
 import Anchor from '../Anchor/Anchor';
-import { experiences, Experience } from "./experiences";
+import { experiences } from "./experiences";
 import { ReactComponent as BulletArrow } from '../../assets/icons/bulletArrow.svg';
 
 
@@ -15,7 +15,7 @@ const ExperiencesSection= forwardRef<HTMLDivElement>((_, ref) => {
     experiences.flatMap(experience => experience.technologies)
   );
   
-  const [technologies, setTechnologies] = useState<Set<string>>(initialTechnologies);
+  const [technologies ] = useState<Set<string>>(initialTechnologies);
   
 
   const handleTechnologySelect = (selectedValues: string[]) => {
@@ -53,7 +53,7 @@ const ExperiencesSection= forwardRef<HTMLDivElement>((_, ref) => {
       const bSelected = selectedTechnologies.includes(b);
       if (aSelected && !bSelected) return -1;
       if (!aSelected && bSelected) return 1;
-      return a.localeCompare(b); // Keep alphabetical order for unselected items
+      return a.localeCompare(b);
     });
   };
 
@@ -88,7 +88,7 @@ const ExperiencesSection= forwardRef<HTMLDivElement>((_, ref) => {
               return (
                 <div key={index} className="experienceList_card">
                   <div className='experienceList_card_header'>
-                    <a href={experience.link} target='_blank' className='hoverable'>
+                    <a href={experience.link} target='_blank' rel="noreferrer" className='hoverable'>
                       <h3 className="experienceList_card_header_role">
                         {experience.role}
                       </h3>

@@ -24,6 +24,7 @@ const FilterDropdown: React.FC<FilterDropdownProps> = ({ options, onSelectionCha
       const rect = headerRef.current.getBoundingClientRect();
       setDropdownWidth(rect.width+2);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [headerRef.current]);
   const toggleDropdown = () => setIsOpen((prevState) => !prevState);
 
