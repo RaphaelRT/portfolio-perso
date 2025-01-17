@@ -1,6 +1,7 @@
 .formationSection {
     display: flex;
     min-height: 100%;
+
     &_content {
         width: calc(100% - 8.5rem);
     }
@@ -25,9 +26,25 @@
         h3 {
             margin-bottom: 0.2rem;
             max-width: 100%;
+            font-size: 1.2rem;
         }
-        span {
+        p {
             white-space: nowrap;
+            user-select: none;
+            pointer-events: none;
+        }
+        :hover {
+            color: $clickable-color;
+        }
+        &_infos{
+            display: block;
+            text-decoration: none;
+            color: $text-light;
+            h3, span {
+                transition: color 0.3s;
+                will-change: color;
+            }
+            
         }
     }
 }

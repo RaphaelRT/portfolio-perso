@@ -88,12 +88,12 @@ const ExperiencesSection= forwardRef<HTMLDivElement>((_, ref) => {
               return (
                 <div key={index} className="experienceList_card">
                   <div className='experienceList_card_header'>
-                    <div>
+                    <a href={experience.link} target='_blank' className='hoverable'>
                       <h3 className="experienceList_card_header_role">
                         {experience.role}
                       </h3>
                       <span className={"company"}>{experience.company}, {experience.place}</span>
-                    </div>
+                    </a>
                     <p className={"date"}>{experience.begin} – {experience.end}</p>
                   </div>
                   <div className="experienceList_card_description">

@@ -33,6 +33,22 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: start;
+                h3, span {
+                    transition: color 0.3s;
+                    will-change: color;
+                }
+                :hover {
+                    h3, span {
+                        color: $clickable-color;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    display: block;
+                    font-family: $font-family-primary;
+                    color: $text-light;
+                    
+                }
 
                 &_role {
                     font-size: 1.2rem;

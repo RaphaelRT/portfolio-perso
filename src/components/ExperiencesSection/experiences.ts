@@ -6,6 +6,7 @@ export interface Experience {
     end: string;
     technologies: string[];
     description: string[];
+    link: string;
   }
   
   export const experiences: Experience[] = [
@@ -21,7 +22,8 @@ export interface Experience {
         "Migration d’un <b>monolithe MeteorJS</b> vers <b>ReactJS</b> et une architecture en <b>micro-services Node.js</b>, améliorant la <b>scalabilité</b>.<br>",
         "Conception et déploiement d’un <b>système de gestion de stock</b> conforme aux normes BIO, réduisant les <b>erreurs de gestion de 35%</b>.<br>",
         "Mise en place d’un <b>système de monitoring</b> technique et business, permettant d’anticiper les <b>incidents critiques</b>.<br>"
-      ]
+      ],
+      link: "https://www.kelbongoo.com/"
     },
     {
       role: "Développeur Full Stack",
@@ -35,7 +37,8 @@ export interface Experience {
         "Optimisation et administration de bases de données (<b>PostgreSQL</b>, <b>MongoDB</b>, <b>MariaDB</b>) pour gérer des volumes de données supérieurs à <b>500 000 lignes</b>.<br>",
         "Gestion de l’<b>infrastructure Kubernetes</b>, incluant la supervision de <b>65 pods</b> sur Google Cloud Platform (GCP).<br>",
         "Maintenance et optimisation des <b>back-ends</b> en Node.js et Django, réduisant les <b>temps de chargement</b> des requêtes de <b>40%</b>.<br>"
-      ]
+      ],
+      link: "https://www.kelbongoo.com/"
     },
     {
       role: "Développeur Python/Java",
@@ -47,8 +50,10 @@ export interface Experience {
       description: [
         "Prototypage Python et développement d’un <b>add-on Java</b> personnalisé pour Tabula, optimisé pour des <b>documents complexes</b> (fiches de paie, rapports fiscaux jusqu’à <b>1000 pages</b>).<br>",
         "Automatisation du traitement des documents, réduisant le temps nécessaire de plusieurs jours à <b>moins d’une heure</b>.<br>"
-      ]
+      ],
+      link: "https://www.ce-expertises.fr/"
     },
+  
     {
       role: "Data Engineer / IA",
       company: "Smarterplan",
@@ -60,7 +65,8 @@ export interface Experience {
         "Optimisation d’un modèle <b>Mask RCNN (YOLACT)</b> pour des projets de vision par ordinateur, augmentant la <b>précision des prédictions de 25%</b>.<br>",
         "Création d’un <b>pipeline d’augmentation d’images</b>, réduisant les besoins en données de <b>30%</b>.<br>",
         "Automatisation des pipelines de traitement de données via <b>AWS Lambda</b>, réduisant le temps de traitement global.<br>"
-      ]
+      ],
+      link: "https://www.smarterplan.io/"
     },
     {
         role: "Développeur Full Stack",
@@ -73,7 +79,8 @@ export interface Experience {
           "Conception et développement d’un <b>thème WordPress</b> entièrement personnalisé, adapté aux <b>besoins spécifiques</b> du produit Gabarit, avec une attention particulière au <b>design responsive</b> et à l’optimisation des performances.<br>",
           "Déploiement et configuration complète sur <b>AWS</b>, incluant la gestion des <b>certificats SSL</b> et la configuration avancée du <b>nom de domaine</b> pour garantir une <b>disponibilité optimale</b>.<br>",
           "Collaboration étroite avec les équipes produit pour assurer une <b>intégration fluide</b> et une <b>expérience utilisateur</b> optimale.<br>"
-        ]
+        ],
+        link: "https://gabarit.fr/"
       },
     {
       role: "Développeur web full-stack",
@@ -86,7 +93,8 @@ export interface Experience {
         "Développement d’une <b>application interne React Native</b> pour les médecins.<br>",
         "Création d’un <b>site / app pour Spineart</b>.<br>",
         "Développement du site <b>Villa Prestige Service</b>.<br>"
-      ]
+      ],
+      link: "https://www.trente-douze.fr/"
     }
   ];
   

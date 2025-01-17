@@ -4,6 +4,7 @@ export interface Formation {
     place: string;
     begin: string;
     end: string;
+    link: string;
 }
 
 export const formation: Formation[] = [
@@ -12,13 +13,15 @@ export const formation: Formation[] = [
         school: "HETIC",
         begin: "2020",
         end: "2022",
-        place: "Paris"
+        place: "Paris",
+        link: "https://www.hetic.net/"
     },
     {
         diploma: "Expert en ingénierie de l'information et de la communication (RNCP 7)",
         school: "HETIC",
         begin: "2017",
         end: "2020",
-        place: "Paris"
+        place: "Paris",
+        link: "https://www.hetic.net/"
     },
 ];
