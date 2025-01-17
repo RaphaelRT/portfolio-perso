@@ -2,20 +2,28 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 2.5rem;
+    min-height: 100%;
+
     @media (max-width: 1000px) {
         flex-direction: column;
     }
-    &_content{
+
+    &_content {
         max-width: calc(100% - 8.5rem);
+
         @media (max-width: 1000px) {
             max-width: 100%;
         }
     }
-    .experienceList{
+
+    .experienceList {
         &_card {
-            border-radius: 0.2rem 0.2rem 0 0rem;
+            border-radius: 0.2rem 0.2rem 0 0;
             border: 3px solid $background-light;
             margin-bottom: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            will-change: transform, box-shadow;
+
             &_header {
                 background-color: $background-light;
                 padding: 0.5rem;
@@ -23,51 +31,62 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: start;
+
                 &_role {
                     font-size: 1.2rem;
                     font-family: $font-family-primary;
                     margin-bottom: 0.2rem;
                 }
             }
+
             &_description {
                 padding: 1.3rem;
                 display: flex;
                 flex-direction: column;
                 max-width: 100%;
-                
+
                 &_txt {
                     display: flex;
                     justify-content: flex-start;
                     align-items: flex-start;
                     flex-direction: row;
                     margin-bottom: 0.5rem;
+
                     b {
                         font-size: $font-size-italic;
                     }
+
                     p {
                         font-family: $font-family-primary;
                         font-size: $font-size-current;
                     }
+
                     svg {
                         max-width: 0.5rem;
                         padding-right: 0.9rem;
                     }
                 }
+
                 &_viewMore {
                     margin-top: 0.5rem;
                     margin-bottom: 1rem;
+                    width: max-content;
                     background-color: $background-dark;
                     font-family: $font-family-primary;
                     color: $clickable-color;
-                    border: solid 2px  $clickable-color;
+                    border: solid 2px $clickable-color;
                     border-radius: 0.2rem;
                     padding: 0.35rem 0.35rem;
                     cursor: pointer;
+                    transition: background-color 0.3s ease, color 0.3s ease;
+                    will-change: background-color, color;
+
                     &:hover {
                         background-color: $clickable-color;
                         color: $background-dark;
                     }
                 }
+
                 &_technologiesList {
                     display: flex;
                     flex-direction: row;
@@ -76,6 +95,7 @@
                     width: 100%;
                     max-width: 100%;
                     box-sizing: border-box;
+
                     &_badge {
                         padding: 0.3rem;
                         background-color: $background-light;
@@ -84,11 +104,14 @@
                         flex-direction: row;
                         border-radius: 0.2rem;
                         min-width: max-content;
-                        cursor: pointer;
+                        transition: background-color 0.3s ease, transform 0.3s ease;
+                        will-change: background-color, transform;
+
                         svg {
                             width: 3rem;
                             margin-left: 0.5rem;
                         }
+
                         &_selected {
                             background-color: $clickable-color;
                             color: $background-dark;

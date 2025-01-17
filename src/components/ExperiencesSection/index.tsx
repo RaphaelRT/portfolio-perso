@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, forwardRef } from 'react';
 import FilterDropdown from '../FilterDropdown';
 import Anchor from '../Anchor/Anchor';
 import { experiences, Experience } from "./experiences";
@@ -7,7 +7,7 @@ import { ReactComponent as BulletArrow } from '../../assets/icons/bulletArrow.sv
 
 const MAX_DESCRIPTION_LENGTH = 200;
 
-const ExperiencesSection: React.FC = () => {
+const ExperiencesSection= forwardRef<HTMLDivElement>((_, ref) => {
  
   const [selectedTechnologies, setSelectedTechnologies] = useState<string[]>([]);
   const [expandedDescriptions, setExpandedDescriptions] = useState<Set<number>>(new Set());
@@ -60,7 +60,7 @@ const ExperiencesSection: React.FC = () => {
 
 
   return (
-    <section className="experiencesSection" id='experiences'>
+    <section ref={ref} className="experiencesSection" id='experiences'>
       <Anchor label='expérience' anchor='experiences'/>
       <div className='experiencesSection_content'>
         <FilterDropdown
@@ -100,7 +100,7 @@ const ExperiencesSection: React.FC = () => {
                     {generateText(isExpanded ? fullDescription : truncatedDescription)}
                     {fullDescription.length > MAX_DESCRIPTION_LENGTH && (
                       <button
-                        className={"experienceList_card_description_viewMore"}
+                        className={"experienceList_card_description_viewMore hoverable"}
                         onClick={() => toggleDescription(index)}
                       >
                         {isExpanded ? 'Voir moins' : 'Voir plus'}
@@ -134,6 +134,6 @@ const ExperiencesSection: React.FC = () => {
       
     </section>
   );
-};
+});
 
 export default ExperiencesSection;

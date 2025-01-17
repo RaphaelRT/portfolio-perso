@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import Anchor from '../Anchor/Anchor';
 
-const AboutSection: React.FC = () => {
+const AboutSection = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <section id="about" className="about">
+    <section id="about" className="about" ref={ref}>
       <Anchor label="à propos" anchor="about" />
       <div>
         <p className="about_text">
@@ -20,6 +20,6 @@ const AboutSection: React.FC = () => {
       </div>
     </section>
   );
-};
+});
 
 export default AboutSection;

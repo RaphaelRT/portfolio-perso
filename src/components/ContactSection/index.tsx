@@ -5,7 +5,7 @@ import { ReactComponent as LinkedinIcon } from '../../assets/icons/linkedin.svg'
 import { ReactComponent as GithubIcon } from '../../assets/icons/github.svg';
 import { ReactComponent as DownloadIcon } from '../../assets/icons/download.svg';
 
-const Contact: React.FC = () => {
+const ContactSection: React.FC = () => {
   const contactItems = [
     { icon: <PhoneIcon />, text: '06 83 03 34 51' },
     { icon: <MailIcon />, text: 'raphaelrobert.pro@gmail.com' },
@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
   ];
 
   return (
-    <section className={"contact"}>
+    <section className="contactSection">
       <ul>
         {contactItems.map((item, index) => (
           <li key={index} className={"hoverable"}>
@@ -30,4 +30,4 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact;
+export default ContactSection;

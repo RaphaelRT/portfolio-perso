@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
 
-const Menu: React.FC = () => {
+interface MenuProps {
+  currentSection: string | null;
+}
+
+const Menu: React.FC<MenuProps> = ({ currentSection }) => {
   const menuItems = [
     { id: 'about', label: '[ à propos ]' },
     { id: 'experiences', label: '[ expériences ]' },
     { id: 'education', label: '[ formation ]' },
-    //{ id: 'projects', label: '[ projets ]' },
+    // { id: 'projects', label: '[ projets ]' },
   ];
 
   const [activeHash, setActiveHash] = useState<string>(
@@ -24,22 +28,31 @@ const Menu: React.FC = () => {
     };
   }, [menuItems]);
 
+  useEffect(() => {
+    if (currentSection) {
+      console.log('Current section:', currentSection);
+    }
+  }, [currentSection]);
+
   return (
     <section className="menu">
       <ul>
-        {menuItems.map((item) => (
-          <li
-            key={item.id}
-            className={`${activeHash === `#${item.id}` ? `menu_selected hoverable` : 'hoverable'}`}
-          >
-            <div>
-              <a href={`#${item.id}`}>
-                {item.label}
-              </a>
-            </div>
-            
-          </li>
-        ))}
+        {menuItems.map((item) => {
+          const isSelected = currentSection
+            ? item.id === currentSection
+            : activeHash === `#${item.id}`;
+
+          return (
+            <li
+              key={item.id}
+              className={`${isSelected ? `menu_selected hoverable` : 'hoverable'}`}
+            >
+              <div>
+                <a href={`#${item.id}`}>{item.label}</a>
+              </div>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );

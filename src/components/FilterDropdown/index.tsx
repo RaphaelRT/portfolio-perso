@@ -39,7 +39,7 @@ const FilterDropdown: React.FC<FilterDropdownProps> = ({ options, onSelectionCha
   return (
     <div className="dropdownContainer">
       <div className={`dropdownContainer_header ${isOpen ? "isOpen" : ""}`}>
-        <div ref={headerRef} className="dropdownContainer_header_btn" onClick={toggleDropdown}>
+        <div ref={headerRef} className="dropdownContainer_header_btn hoverable" onClick={toggleDropdown}>
           <span className="dropdownContainer_header_label">Filtre par technologie</span>
           <ChevronRight />
         </div>
@@ -59,7 +59,7 @@ const FilterDropdown: React.FC<FilterDropdownProps> = ({ options, onSelectionCha
             {options.map((option) => (
               <li
                 key={option.value}
-                className={`dropdownContainer_dropdownList_dropdownItem ${
+                className={`dropdownContainer_dropdownList_dropdownItem hoverable ${
                   selectedOptions.includes(option.value) ? "dropdownContainer_dropdownList_dropdownItem_selected" : ""
                 }`}
                 onClick={() => handleOptionClick(option.value)}

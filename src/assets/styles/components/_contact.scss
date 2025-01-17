@@ -1,49 +1,57 @@
-.contact {
-    ul {
-      list-style: none;
-      padding: 0;
-  
-      li {
+.contactSection {
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      transition: all 0.25s;
+      font-weight: 100;
+      color: #F5F5F5;
+      will-change: transform, opacity;
+      cursor: pointer;
+
+      &:hover {
+        .icon {
+          svg {
+            stroke-width: 2px;
+            stroke: $clickable-color;
+            will-change: stroke, stroke-width;
+          }
+        }
+        a {
+          font-weight: 500;
+          color: $clickable-color;
+          will-change: color, font-weight;
+        }
+      }
+
+      a {
         display: flex;
         align-items: center;
-        margin: 10px 0;
-        transition: all 0.3s ease;
-        font-weight: 100;
-        color: #F5F5F5;
-  
-        &:hover {
-          .icon {
-            svg {
-              stroke-width: 2px;
-            }
-          }
-          a {
-            font-weight: 300;
-          }
-  
-        }
-  
-        a {
+        text-decoration: none;
+        color: inherit;
+        font-family: $font-family-primary;
+        transition: all 0.25s;
+        will-change: color, transform;
+
+        .icon {
           display: flex;
           align-items: center;
-          text-decoration: none;
-          color: inherit;
-  
-          .icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 10px;
-  
-            svg {
-              width: 24px;
-              height: 24px;
-              stroke-width: 1px; /* Définit une largeur de trait par défaut */
-              transition: stroke-width 0.3s ease; /* Ajoute une animation fluide */
-            }
+          justify-content: center;
+          margin-right: 10px;
+
+          svg {
+            width: 24px;
+            height: 24px;
+            stroke-width: 1px;
+            transition: all 0.25s;
+            will-change: stroke, stroke-width;
           }
         }
       }
     }
   }
-  
+}

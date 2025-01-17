@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, forwardRef } from 'react';
 import FilterDropdown from '../FilterDropdown';
 import Anchor from '../Anchor/Anchor';
 import { formation, Formation } from "./formation";
 
-const FormationSection: React.FC = () => {
+const FormationSection = forwardRef<HTMLDivElement>((_, ref) => {
  
 
   return (
-    <section className="formationSection" id='education'>
+    <section ref={ref} className="formationSection" id='education'>
       <Anchor label='formation' anchor='education'/>
       <div className='formationSection_content'>
         {formation.map(education => {
@@ -25,6 +25,6 @@ const FormationSection: React.FC = () => {
       
     </section>
   );
-};
+});
 
 export default FormationSection;
