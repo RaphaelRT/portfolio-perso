@@ -3,7 +3,7 @@ h2 {
     margin-bottom: 4rem;
     display: inline-block;
     width: 100%;
-    @media (max-width: 640px) {
+    @media (max-width: 1000px) {
         margin-bottom: 2.5rem;
         margin-top: 0.5rem;
     }
@@ -35,13 +35,14 @@ h2 {
     &_col2 {
         overflow-y: scroll;
     }
-    @media (max-width: 640px) {
+    @media (max-width: 1000px) {
         flex-direction: column;
         &_col1, &_col2 {
             width: 100%;
         }
         &_col1 {
             height: 70vh;
+            margin-bottom: 15vh;
         }
         &_col2 {
             margin-top: 2.5rem;

@@ -7,11 +7,11 @@ import { ReactComponent as DownloadIcon } from '../../assets/icons/download.svg'
 
 const ContactSection: React.FC = () => {
   const contactItems = [
-    { icon: <PhoneIcon />, text: '06 83 03 34 51' },
-    { icon: <MailIcon />, text: 'raphaelrobert.pro@gmail.com' },
-    { icon: <LinkedinIcon />, text: 'Raphaël ROBERT', link: 'https://linkedin.com/in/raphaelrobert' },
-    { icon: <GithubIcon />, text: 'RaphaelRT', link: 'https://github.com/RaphaelRT' },
-    { icon: <DownloadIcon />, text: 'Curriculum vitae', link: '/path/to/cv.pdf' },
+    { icon: <PhoneIcon />, text: '06 83 03 34 51', link: 'tel:+33683033451' },
+    { icon: <MailIcon />, text: 'raphaelrobert.pro@gmail.com', link: 'mailto:raphaelrobert.pro@gmail.com' },
+    { icon: <LinkedinIcon />, text: 'Raphaël ROBERT', link: 'https://linkedin.com/in/raphael-rbrt', isExternal: true },
+    { icon: <GithubIcon />, text: 'RaphaelRT', link: 'https://github.com/RaphaelRT', isExternal: true },
+    { icon: <DownloadIcon />, text: 'Curriculum vitae', link: '/download/CV_ROBERT_Raphael_2025.pdf', isExternal: false },
   ];
 
   return (
@@ -19,7 +19,7 @@ const ContactSection: React.FC = () => {
       <ul>
         {contactItems.map((item, index) => (
           <li key={index} className={"hoverable"}>
-            <a href={item.link || '#'} target={item.link ? '_blank' : '_self'} rel="noopener noreferrer">
+            <a href={item.link || '#'} target={item.isExternal ? '_blank' : '_self'} rel={item.isExternal ? 'noopener noreferrer' : undefined}>
               <span className={"icon"}>{item.icon}</span>
               <span>{item.text}</span>
             </a>

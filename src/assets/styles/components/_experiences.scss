@@ -6,6 +6,8 @@
 
     @media (max-width: 1000px) {
         flex-direction: column;
+        min-height: max-content;
+        margin-bottom: 15vh;
     }
 
     &_content {

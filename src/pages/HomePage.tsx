@@ -33,7 +33,6 @@ const HomePage: React.FC = () => {
 
         const sectionRect = sectionElement.getBoundingClientRect();
 
-        // Vérifie si la section est partiellement visible dans le conteneur
         if (
           sectionRect.top < col2Rect.bottom &&
           sectionRect.bottom > col2Rect.top
@@ -43,7 +42,6 @@ const HomePage: React.FC = () => {
         }
       }
 
-      // Si aucune section n'est visible, réinitialise
       setCurrentSection(null);
     };
 

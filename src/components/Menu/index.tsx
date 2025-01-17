@@ -28,12 +28,6 @@ const Menu: React.FC<MenuProps> = ({ currentSection }) => {
     };
   }, [menuItems]);
 
-  useEffect(() => {
-    if (currentSection) {
-      console.log('Current section:', currentSection);
-    }
-  }, [currentSection]);
-
   return (
     <section className="menu">
       <ul>
