@@ -3,22 +3,25 @@ name: Deploy to FTP
 on:
   push:
     branches:
-      - '**'
+      - '**' # Trigger on push for all branches
 
 jobs:
   ftp-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      # Checkout the repository
+      - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Install dependencies and build
+      # Install dependencies and build the project
+      - name: Install Dependencies and Build
         run: |
           npm install
           npm run build
 
-       - name: Deploy to Staging FTP
+      # Deploy to Staging FTP
+      - name: Deploy to Staging FTP
         if: github.ref != 'refs/heads/main'
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
@@ -28,6 +31,7 @@ jobs:
           local-dir: build/
           server-dir: /www/staging/
 
+      # Deploy to Production FTP
       - name: Deploy to Production FTP
         if: github.ref == 'refs/heads/main'
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
