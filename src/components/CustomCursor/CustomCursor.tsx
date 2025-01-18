@@ -30,7 +30,7 @@ const CustomCursor: React.FC<CustomCursorProps> = ({ disabled = false }) => {
   // Detect screen size and disable for mobile/tablet
   useEffect(() => {
     const handleResize = () => {
-      setIsDisabledForMobile(window.innerWidth <= 768);
+      setIsDisabledForMobile(window.innerWidth <= 1000);
     };
 
     handleResize(); // Initial check
