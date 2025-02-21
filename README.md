@@ -1,63 +1,36 @@
-# Raphaël Robert Portfolio
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Welcome to my professional portfolio! This project showcases my skills and experiences as a Full Stack Developer, Data Engineer, and DevOps specialist. If you're looking to collaborate or hire a versatile developer with a passion for technology, you've come to the right place.
+## Getting Started
 
-## Table of Contents
+First, run the development server:
 
-- [About Me](#about-me)
-- [Contact Information](#contact-information)
-- [Skills](#skills)
-- [How to Use This Portfolio](#how-to-use-this-portfolio)
-- [Get in Touch](#get-in-touch)
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## About Me
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-I am a Full Stack Developer with extensive experience in:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- **Web Development**: React, Node.js, Django, and more.
-- **Data Engineering**: Designing ETL pipelines, managing large-scale databases.
-- **DevOps**: CI/CD pipelines, Docker, Kubernetes, cloud infrastructure.
-- **AI and Machine Learning**: TensorFlow, Computer Vision, NLP, and data pipelines.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Over the years, I've worked on projects that improved scalability, enhanced user experiences, and optimized technical processes. I'm currently open to exciting opportunities to bring my expertise to new challenges.
+## Learn More
 
-## Contact Information
+To learn more about Next.js, take a look at the following resources:
 
-If you're interested in working with me or learning more about my experience, feel free to reach out:
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- **Email**: [raphaelrobert.pro@gmail.com](mailto:raphaelrobert.pro@gmail.com)
-- **Portfolio**: [www.raphaelrbr.com](https://www.raphaelrbr.com)
-- **GitHub**: [RaphaelRT](https://github.com/RaphaelRT)
-- **LinkedIn**: [Raphaël Robert](https://www.linkedin.com/in/raphael-robert)
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Skills
+## Deploy on Vercel
 
-Here are some of the key areas I excel in:
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-- **Programming Languages**: JavaScript, Python, SQL, Java.
-- **Frameworks and Libraries**: React, React Native, Django, Node.js.
-- **Data Tools**: Pandas, Geopandas, Spark, Hadoop.
-- **DevOps Tools**: Docker, Kubernetes, CI/CD pipelines.
-- **Cloud Platforms**: AWS, Google Cloud Platform (GCP).
-- **Machine Learning**: TensorFlow, Scikit-learn, YOLACT.
-
-## How to Use This Portfolio
-
-This portfolio provides an overview of my professional journey, including:
-
-- Details about my past projects.
-- Highlights of my technical skills and expertise.
-- Links to my GitHub and LinkedIn for deeper insights into my work.
-
-Explore the various sections to learn more about my background and achievements.
-
-## Get in Touch
-
-I am actively looking for new opportunities where I can contribute my skills and grow as a professional. Whether you're hiring for a Full Stack Developer, Data Engineer, or DevOps role, I would be thrilled to discuss how I can add value to your team.
-
-Feel free to contact me through the methods listed above, or visit my portfolio for more details about my work.
-
----
-
-Thank you for your time and interest in my portfolio. I look forward to connecting with you!
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

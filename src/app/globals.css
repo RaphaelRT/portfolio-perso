@@ -1,0 +1,290 @@
+
+
+/* width */
+.custom-scroll::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+.custom-scroll::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+  cursor:pointer;
+}
+.custom-scroll {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/fonts/Helvetica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/fonts/helvetica-light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Redaction35';
+  src: url('/fonts/Redaction_35-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Redaction35';
+  src: url('/fonts/Redaction_35-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Redaction20';
+  src: url('/fonts/Redaction_20-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Redaction50';
+  src: url('/fonts/Redaction_50-Regular.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskDisplayPro';
+  src: url('/fonts/NeueHaasDisplay-Mediu.eot');
+  src: local('/fonts/NeueHaasDisplay-Mediu'),
+      url('/fonts/NeueHaasDisplay-Mediu.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NeueHaasDisplay-Mediu.woff2') format('woff2'),
+      url('/fonts/NeueHaasDisplay-Mediu.woff') format('woff'),
+      url('/fonts/NeueHaasDisplay-Mediu.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskDisplayPro';
+  src: url('/fonts/NeueHaasDisplay-RomanItalic.eot');
+  src: local('/fonts/NeueHaasDisplay-RomanItalic'),
+      url('/fonts/NeueHaasDisplay-RomanItalic.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NeueHaasDisplay-RomanItalic.woff2') format('woff2'),
+      url('/fonts/NeueHaasDisplay-RomanItalic.woff') format('woff'),
+      url('/fonts/NeueHaasDisplay-RomanItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskDisplayPro';
+  src: url('/fonts/NeueHaasDisplay-Black.eot');
+  src: local('/fonts/NeueHaasDisplay-Black'),
+      url('/fonts/NeueHaasDisplay-Black.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NeueHaasDisplay-Black.woff2') format('woff2'),
+      url('/fonts/NeueHaasDisplay-Black.woff') format('woff'),
+      url('/fonts/NeueHaasDisplay-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskDisplayPro';
+  src: url('/fonts/NeueHaasDisplay-MediumItalic.eot');
+  src: local('/fonts/NeueHaasDisplay-MediumItalic'),
+      url('/fonts/NeueHaasDisplay-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NeueHaasDisplay-MediumItalic.woff2') format('woff2'),
+      url('/fonts/NeueHaasDisplay-MediumItalic.woff') format('woff'),
+      url('/fonts/NeueHaasDisplay-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskDisplayPro';
+  src: url('/fonts/NeueHaasDisplay-BlackItalic.eot');
+  src: local('/fonts/NeueHaasDisplay-BlackItalic'),
+      url('/fonts/NeueHaasDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NeueHaasDisplay-BlackItalic.woff2') format('woff2'),
+      url('/fonts/NeueHaasDisplay-BlackItalic.woff') format('woff'),
+      url('/fonts/NeueHaasDisplay-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskDisplayPro';
+  src: url('/fonts/NeueHaasDisplay-Roman.eot');
+  src: local('/fonts/NeueHaasDisplay-Roman'),
+      url('/fonts/NeueHaasDisplay-Roman.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NeueHaasDisplay-Roman.woff2') format('woff2'),
+      url('/fonts/NeueHaasDisplay-Roman.woff') format('woff'),
+      url('/fonts/NeueHaasDisplay-Roman.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskDisplayPro';
+  src: url('/fonts/NeueHaasDisplay-BoldItalic.eot');
+  src: local('/fonts/NeueHaasDisplay-BoldItalic'),
+      url('/fonts/NeueHaasDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NeueHaasDisplay-BoldItalic.woff2') format('woff2'),
+      url('/fonts/NeueHaasDisplay-BoldItalic.woff') format('woff'),
+      url('/fonts/NeueHaasDisplay-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskDisplayPro';
+  src: url('/fonts/NeueHaasDisplay-LightItalic.eot');
+  src: local('/fonts/NeueHaasDisplay-LightItalic'),
+      url('/fonts/NeueHaasDisplay-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NeueHaasDisplay-LightItalic.woff2') format('woff2'),
+      url('/fonts/NeueHaasDisplay-LightItalic.woff') format('woff'),
+      url('/fonts/NeueHaasDisplay-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskDisplayPro';
+  src: url('/fonts/NeueHaasDisplay-Bold.eot');
+  src: local('/fonts/NeueHaasDisplay-Bold'),
+      url('/fonts/NeueHaasDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NeueHaasDisplay-Bold.woff2') format('woff2'),
+      url('/fonts/NeueHaasDisplay-Bold.woff') format('woff'),
+      url('/fonts/NeueHaasDisplay-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskDisplayPro';
+  src: url('/fonts/NeueHaasDisplay-Light.eot');
+  src: local('/fonts/NeueHaasDisplay-Light'),
+      url('/fonts/NeueHaasDisplay-Light.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NeueHaasDisplay-Light.woff2') format('woff2'),
+      url('/fonts/NeueHaasDisplay-Light.woff') format('woff'),
+      url('/fonts/NeueHaasDisplay-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskDisplayPro';
+  src: url('/fonts/NeueHaasDisplay-XXThin.eot');
+  src: local('/fonts/NeueHaasDisplay-XXThin'),
+      url('/fonts/NeueHaasDisplay-XXThin.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NeueHaasDisplay-XXThin.woff2') format('woff2'),
+      url('/fonts/NeueHaasDisplay-XXThin.woff') format('woff'),
+      url('/fonts/NeueHaasDisplay-XXThin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskDisplayPro';
+  src: url('/fonts/NeueHaasDisplay-XThinItalic.eot');
+  src: local('/fonts/NeueHaasDisplay-XThinItalic'),
+      url('/fonts/NeueHaasDisplay-XThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NeueHaasDisplay-XThinItalic.woff2') format('woff2'),
+      url('/fonts/NeueHaasDisplay-XThinItalic.woff') format('woff'),
+      url('/fonts/NeueHaasDisplay-XThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskDisplayPro';
+  src: url('/fonts/NeueHaasDisplay-XXThinItalic.eot');
+  src: local('/fonts/NeueHaasDisplay-XXThinItalic'),
+      url('/fonts/NeueHaasDisplay-XXThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NeueHaasDisplay-XXThinItalic.woff2') format('woff2'),
+      url('/fonts/NeueHaasDisplay-XXThinItalic.woff') format('woff'),
+      url('/fonts/NeueHaasDisplay-XXThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskDisplayPro';
+  src: url('/fonts/NeueHaasDisplay-XThin.eot');
+  src: local('/fonts/NeueHaasDisplay-XThin'),
+      url('/fonts/NeueHaasDisplay-XThin.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NeueHaasDisplay-XThin.woff2') format('woff2'),
+      url('/fonts/NeueHaasDisplay-XThin.woff') format('woff'),
+      url('/fonts/NeueHaasDisplay-XThin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskDisplayPro';
+  src: url('/fonts/NeueHaasDisplay-Thin.eot');
+  src: local('/fonts/NeueHaasDisplay-Thin'),
+      url('/fonts/NeueHaasDisplay-Thin.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NeueHaasDisplay-Thin.woff2') format('woff2'),
+      url('/fonts/NeueHaasDisplay-Thin.woff') format('woff'),
+      url('/fonts/NeueHaasDisplay-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaasGroteskDisplayPro';
+  src: url('/fonts/NeueHaasDisplay-ThinItalic.eot');
+  src: local('/fonts/NeueHaasDisplay-ThinItalic'),
+      url('/fonts/NeueHaasDisplay-ThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NeueHaasDisplay-ThinItalic.woff2') format('woff2'),
+      url('/fonts/NeueHaasDisplay-ThinItalic.woff') format('woff'),
+      url('/fonts/NeueHaasDisplay-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+
+
+
+:root {
+  --background: #232323;
+  --low_backgrdound: #2c2c2c;
+  --curr_white: #F0F0F0;
+  --curr_yellow: #E1F064;
+  --curr_low_yellow: #ffee8d;
+  --curr_blue: #4C6F76;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+b {
+  font-weight: bolder;
+  font-style: italic;
+  font-family: "Redaction35, sans-serif";
+  font-size: 120%;
+  color: var(--curr_yellow);
+}
+
+.line-inner {
+  transform: translateY(100%);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+

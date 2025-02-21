@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 150 150">
+  <!-- Generator: Adobe Illustrator 29.2.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 116)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #f0f0f0;
+      }
+    </style>
+  </defs>
+  <rect class="st0" x="49.73" y="99.74" width="25" height="25"/>
+  <rect class="st0" x="24.73" y="74.74" width="25" height="25"/>
+  <polygon class="st0" points="149.73 99.74 149.73 149.74 74.73 149.74 74.73 124.74 99.73 124.74 99.73 99.74 149.73 99.74"/>
+  <polygon class="st0" points="149.73 24.74 149.73 49.74 99.73 49.74 99.73 -.26 124.73 -.26 124.73 24.74 149.73 24.74"/>
+  <polygon class="st0" points="49.73 -.26 49.73 49.74 24.73 49.74 24.73 74.74 -.27 74.74 -.27 -.26 49.73 -.26"/>
+</svg>
