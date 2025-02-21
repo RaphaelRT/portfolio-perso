@@ -42,8 +42,8 @@ export default function NotFound() {
     return (
         <Container>
         <Title>404</Title>
-        <Message>Désolé, la page que vous recherchez n'existe pas !</Message>
-        <StyledLink className="hoverable" href="/">Revenir à la page d'acceuil</StyledLink>
+        <Message>Désolé, la page que vous recherchez n&apos;existe pas !</Message>
+        <StyledLink className="hoverable" href="/">Revenir à la page d&apos;acceuil</StyledLink>
         </Container>
     );
 }
