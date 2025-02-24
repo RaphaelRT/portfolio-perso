@@ -12,6 +12,7 @@ const { COLORS: { WHITE }, TYPOGRAPHY: { CURRENT, CURRENT_LH, CURRENT_LP } } = s
 const StyledBulletArrow = styled(BulletArrow)`
   width: 0.7rem;
   fill: var(--curr_white);
+  padding: 0.25rem;
 `;
 const StyledLink = styled(Link)`
   cursor: pointer;
@@ -32,7 +33,6 @@ const generateText = (text: string) => {
         $cols={{ mobile: "1.5rem 1fr" }}
         $extrastyle={{
           mobile: `
-            margin-top: 0.5rem;
             align-items: start;
             line-height: ${CURRENT_LH};
           `,
@@ -40,7 +40,7 @@ const generateText = (text: string) => {
       >
         <StyledBulletArrow />
         <StyledElement $extrastyle={{
-          mobile: `font-size: ${CURRENT}; font-weight: 100; letter-spacing: ${CURRENT_LP}; line-height: ${CURRENT_LH};`,
+          mobile: `font-size: ${CURRENT}; font-weight: 100; letter-spacing: ${CURRENT_LP}; line-height: ${CURRENT_LH}; overflow-y: hidden!important; min-height: max-content; padding: 0.25rem;`,
         }} dangerouslySetInnerHTML={{ __html: desc }} />
       </StyledElement>
     ));

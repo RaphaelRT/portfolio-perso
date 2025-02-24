@@ -68,11 +68,13 @@ export const CategoryTitle = styled.h2`
 export const DescriptiveText = styled.p`
     color: ${WHITE};
     font-weight: 100;
+    font-family: "NeueHaasGroteskDisplayPro";
     font-size: ${CURRENT};
     line-height: ${CURRENT_LH};
     letter-spacing: ${CURRENT_LP};
     padding-bottom: ${CURRENT_LH};
     b {
         font-weight: bold;
+        font-family: "Redaction50";
     }
 `;

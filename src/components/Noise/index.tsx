@@ -32,7 +32,7 @@ export default function Noise() {
   return (
     <StyledElement
       $extrastyle={{
-        mobile: "position: absolute; width: 100vw; height: 100vh; overflow: hidden; z-index: -1;",
+        mobile: "position: absolute; width: 100%; height: 100vh; overflow: hidden; z-index: -1;",
       }}
     >
       <NoiseBackground/>

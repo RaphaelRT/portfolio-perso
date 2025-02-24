@@ -29,8 +29,8 @@ body {
 }
 svg {
   fill: var(--curr_white);
-  min-width: 24px;
-  min-height: 24px;
+  min-width: 0.7rem;
+  min-height: 0.7rem;
 }
 
 @font-face {
@@ -281,7 +281,7 @@ body {
 b {
   font-weight: bolder;
   font-style: italic;
-  font-family: "Redaction35, sans-serif";
+  font-family: "Redaction50";
   font-size: 120%;
   color: var(--curr_yellow);
 }

@@ -84,14 +84,14 @@ export default function Home() {
         <div ref={pageRef} style={{ opacity: 0 }}>
             <StyledElement
                 $as="div"
-                $cols={{ mobile: "3fr max-content", desktop: "1.4fr 1.5fr max-content" }}
+                $cols={{ mobile: "3fr minmax(0, max-content)", desktop: "1.4fr 1.5fr max-content" }}
                 $rows={{
                     mobile: "4rem minmax(auto, calc(100vh - 4.5rem))",
                     desktop: "4rem minmax(0,auto) auto",
                 }}
                 $extrastyle={{
                     mobile:
-                    "width: 100vw; gap: 0; margin: 0; padding: 0; border-collapse: collapse; border-spacing: 0;",
+                    "width: 100vw; gap: 0; margin: 0; padding: 0; border-collapse: collapse; border-spacing: 0; max-width:100%;",
                     desktop: "height: 100vh;",
                 }}
             >
