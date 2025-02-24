@@ -62,7 +62,7 @@ export const MenuLink: FC<MenuLinkProps> = ({ image, text, href }) => {
                     `,
                 }}
             >
-                <SvgContainer>{image}</SvgContainer>
+                <SvgContainer className="customSVG">{image}</SvgContainer>
             </StyledElement>
             <LinkEl href={href} target={href.includes("https") ? "_blank": "_self"} rel={href.includes("https") ? "noopener noreferrer": ""}>{text}</LinkEl>
         </StyledElement>
