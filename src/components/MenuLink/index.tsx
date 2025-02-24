@@ -45,9 +45,9 @@ export const MenuLink: FC<MenuLinkProps> = ({ image, text, href }) => {
                 fill: ${WHITE};
                 cursor: pointer;
                 transition: all 0.3s ease-in-out;
-                &:hover ${SvgContainer}, &:hover ${LinkEl} {
+                &:hover ${SvgContainer} *, &:hover ${LinkEl} {
                     color: ${YELLOW};
-                    fill: ${YELLOW};
+                    fill: ${YELLOW} !important;
                 }`,
             }}
         >
