@@ -27,7 +27,11 @@
 body {
   margin: 0;
 }
-
+svg {
+  fill: var(--curr_white);
+  min-width: 24px;
+  min-height: 24px;
+}
 
 @font-face {
   font-family: 'Helvetica';
